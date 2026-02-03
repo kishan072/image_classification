@@ -102,8 +102,8 @@ def main():
         # Show all predictions
         st.subheader("All Class Probabilities:")
         for i, class_name in enumerate(class_names):
-            probability = all_predictions[i] * 100
-            st.progress(probability/100, text=f"{class_name}: {probability:.2f}%")
+            probability = float(all_predictions[i]) * 100
+            st.progress(float(probability/100), text=f"{class_name}: {probability:.2f}%")
 
 if __name__ == "__main__":
     main()
