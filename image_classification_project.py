@@ -142,7 +142,7 @@ model.summary()
 # TRAINING
 # ============================================================================
 
-EPOCHS = 20
+EPOCHS = 25
 
 # Train the model
 history = model.fit(
